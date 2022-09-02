@@ -1,0 +1,28 @@
+<header>
+    <h1>Register</h1>
+    <hr>
+    <form class="container-fluid" style="width:70%">
+        <mat-form-field>
+            <input matInput type="text" [(ngModel)]="user.username" name="uname" id="uname" placeholder="Username" autocomplete="off">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [type]="type" [(ngModel)]="user.password" name="pwd" id="pwd" placeholder="Password" autocomplete="off">
+            <span class="inputIcon" (click)="showthePassword()" *ngIf="user.password">
+                <i class="fas fa-eye" *ngIf="!showPassword"></i>
+                <i class="fas fa-eye-slash" *ngIf="showPassword"></i>
+            </span>
+        </mat-form-field>
+        <small style="float: left; font-size: 12px;">Inserisci i tuoi dati per la registrazione.</small>
+        <br>
+    </form>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <button (click)="register()" class="btn btn-primary" [disabled]="!user.username || !user.password">Registrati</button>
+            &nbsp;
+            <a routerLink=''>
+                <button class="btn btn-primary" style="background-color: #117">Indietro</button>
+            </a>
+        </div>
+    </div>
+</header>

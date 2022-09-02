@@ -1,0 +1,30 @@
+<header class="container-fluid h-auto">
+  <h1>Benvenuto {{ loggedUser.username }}!</h1>
+  <small></small>
+  <hr style="width: 84%">
+  <div class="row container-fluid w-84 h-auto p-0 mx-auto mr-auto">
+    <div class="col-md-6 container-fluid w-auto h-auto p-0" style="text-align: left;">
+      <a routerLink='./gestioneUtenti' routerLinkActive="active" style="margin-left: 17%;">
+        <button class="btn btn-primary"><i class="fas fa-user-circle"></i> Utenti</button>
+      </a>
+      &nbsp;
+      <a routerLink='./gestioneLog' routerLinkActive="active">
+        <button class="btn btn-primary"><i class="fas fa-sliders-h"></i> Logs</button>
+      </a>
+    </div>
+    <div class="col-md-6 container-fluid w-auto h-auto p-0" style="text-align: right;">
+      <a style="margin-right: 17%;">
+        <button class="btn btn-danger" (click)="logout()" title="Logout"><i class="fas fa-sign-out-alt"></i> Esci</button>
+      </a>
+    </div>
+  </div>
+</header>
+<div *ngIf="isHome()" id="tipDiv">
+  <span style="font-size: 26px;">
+    <i class="fas fa-hand-pointer"></i>
+  </span>
+  <p>Naviga dal menù in alto</p>
+</div>
+<div id="content" class="container-fluid">
+  <router-outlet></router-outlet>
+</div>

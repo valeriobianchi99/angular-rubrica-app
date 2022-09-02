@@ -1,0 +1,46 @@
+header{
+    position: fixed;
+    top: 20px;
+    left: 15%;
+    width: 70%;
+    height: 120px;
+    z-index: 99;
+    background-color:white ;
+    border-bottom: 1px solid gainsboro;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 20px;
+}
+
+#content {
+    width: 100%;
+    position: relative;
+    top: 215px;
+}
+
+#tipDiv {
+    position: relative;
+    top: 170px;
+    left: 10%;
+    width: auto;
+    height: auto;
+    opacity: 0.4;
+    cursor: default;
+    transition: all 0.4s;
+}
+
+#tipDiv:hover{
+    opacity: 1;
+}
+
+a.active>button{
+    background-color: #117
+}
+
+
+.col-md-6 {
+    margin: 0px;
+}

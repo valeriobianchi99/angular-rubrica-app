@@ -1,0 +1,13 @@
+
+<div style="width: 100%;height: 100%; margin: 0px !important;">
+    <ngb-toast id="toast" [class]="toast.type" aria-labelledby="viewport" [header]="toast.type" *ngIf="alert" (hide)="alert=false;" [autohide]="false">
+        <strong>{{ toast.message }}</strong>
+    </ngb-toast>
+
+    <div id="wrapper" class="container-fluid">
+        <app-loader></app-loader>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+

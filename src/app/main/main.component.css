@@ -1,0 +1,47 @@
+
+/* Tags */
+
+ngb-toast {
+    border: 1px solid black;
+    box-shadow: 1px 1px 15px black;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    height: 100px;
+    top: 10%;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+/* -------- */
+
+/* ID */
+
+#wrapper {
+    height: 100%;
+    width: 70%;
+    left: 15%;
+}
+
+/* -------- */
+
+/* Classes */
+
+.toast-body{
+    height: 50px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+
+/* -------- */

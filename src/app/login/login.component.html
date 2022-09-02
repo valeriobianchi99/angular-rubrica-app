@@ -1,0 +1,29 @@
+<header>
+    <h1>Login</h1>
+    <hr>
+    <form class="container-fluid" style="width: 70%">
+        <mat-form-field>
+            <input matInput type="text" [(ngModel)]="user.username" id="uname" name="uname" placeholder="Username" autocomplete="off">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [type]="type" [(ngModel)]="user.password" id="pwd" name="pwd" placeholder="Password" autocomplete="off">
+            <span class="inputIcon" (click)="showthePassword()" *ngIf="user.password">
+                <i class="fas fa-eye" *ngIf="!showPassword"></i>
+                <i class="fas fa-eye-slash" *ngIf="showPassword"></i>
+            </span>
+        </mat-form-field>
+        <small style="float: left; font-size: 12px;">Accedi con le tue credenziali.</small>
+        <br>
+    </form>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <button (click)="login();" class="btn btn-primary" [disabled]="!user.username || !user.password">Accedi <i class="fas fa-sign-in-alt"></i></button>
+            <br>
+            <br>
+            <a routerLink='./register'>
+                Non hai un account? Registrati.
+            </a>
+        </div>
+    </div>
+</header>

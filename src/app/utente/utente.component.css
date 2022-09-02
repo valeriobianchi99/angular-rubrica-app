@@ -1,0 +1,68 @@
+
+/* Tags */
+
+mat-form-field{
+    display: block;
+    padding: 0px;
+}
+
+/* -------- */
+
+/* Table */
+
+table {
+    box-shadow: 1px 1px 5px gainsboro;
+}
+
+.row {
+    width: 100% !important;
+    padding: 5px;
+    margin: 0px;
+}
+
+#tableDiv {
+    height: auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+td, th {
+    width: 160px !important;
+    text-align: center;
+}
+
+/* -------- */
+
+/* Classes */
+
+.col-md-6 {
+    padding: 0px;
+}
+
+.toast-body {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* -------- */
+
+/* ID */
+
+#toast {
+    position: absolute;
+    left: 50%;
+    width: 240px;
+    margin-left: -120px;
+    height: 120px;
+    top: 50%;
+    margin-top: -60px;
+    z-index: 99;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: red;
+    box-shadow: 1px 1px 5px black;
+}
+
+/* -------- */

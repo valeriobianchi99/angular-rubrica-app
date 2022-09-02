@@ -1,0 +1,41 @@
+
+/* Table */
+
+table {
+    box-shadow: 1px 1px 5px gainsboro;
+}
+
+td,th{
+    width: 200px;
+    text-align: left;
+}
+
+#tableDiv {
+    height: auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* -------- */
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    height: 40px;
+
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: blue; 
+}
+
+/* -------- */
